@@ -1,20 +1,24 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+// Import components
+import NavItem from "./components/NavItem";
+import About from "./components/About";
+import HeroDetails from "./components/HeroDetails";
+import Home from "./components/Home";
 
-import Home from "./routes/Home"; 
-import About from "./routes/About";
-
-import Navbar from "./components/NavBar";
-import NavBar from './components/NavBar';
+// Import dependencies
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-   <Router>
-    <NavBar/>
-    <Routes>
-      <Route path={'/'} element={<Home/>}/>
-      <Route path={'about'} element={<About/>}/>
-    </Routes>
-   </Router>
+    <Router>
+  
+        <NavItem to={"/"} text={"Home"} />
+        <NavItem to={"/about"} text={"About"} />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<HeroDetails />} />
+      </Routes>
+    </Router>
   );
 }
 
