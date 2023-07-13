@@ -41,7 +41,4 @@ Contributions to SuperSearch are welcome! If you have any suggestions, bug repor
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Contact
-
-For any inquiries or further information, please contact [your-email@example.com](mailto:your-email@example.com).
 
