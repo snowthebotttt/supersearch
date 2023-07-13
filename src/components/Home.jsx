@@ -6,7 +6,7 @@ import Card from "./Card";
 import React from "react";
 import { useState } from "react";
 import { fetchHeros } from "../libs/utils";
-import backgroundImage from './public/images/backgroundImage.png';
+
 
 const IMG_FANTASTIC = "portrait_fantastic";
 
